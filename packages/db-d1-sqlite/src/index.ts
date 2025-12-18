@@ -16,7 +16,6 @@ import {
   deleteMany,
   deleteOne,
   deleteVersions,
-  destroy,
   find,
   findGlobal,
   findGlobalVersions,
@@ -57,6 +56,7 @@ import { fileURLToPath } from 'url'
 import type { Args, SQLiteD1Adapter } from './types.js'
 
 import { connect } from './connect.js'
+import { destroy } from './destroy.js'
 import { execute } from './execute.js'
 
 const filename = fileURLToPath(import.meta.url)

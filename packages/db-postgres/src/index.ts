@@ -15,7 +15,6 @@ import {
   deleteMany,
   deleteOne,
   deleteVersions,
-  destroy,
   find,
   findDistinct,
   findGlobal,
@@ -61,6 +60,7 @@ import { fileURLToPath } from 'url'
 import type { Args, PostgresAdapter } from './types.js'
 
 import { connect } from './connect.js'
+import { destroy } from './destroy.js'
 
 const filename = fileURLToPath(import.meta.url)
 
